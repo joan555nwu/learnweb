@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="jquery-2.0.3.js"></script>
+    <script >
+      $(document).ready(function(){
+        $("p").click(function(){$(this).hide();});
+        $("button").click(function(){
+          $("div").animate({left:'250px'});
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>click me, and i will  disappear</p>
+    <p>click,disappear again</p>
+    <p>haha,i will disappear when cliked</p>
+    <button>click</button>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute">
+    </div>
+  </body>
+</html>

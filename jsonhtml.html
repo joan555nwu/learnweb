@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <p>
+      First Name:<span id="fname"></span><br />
+      Last Name:<span id="lname"></span><br />
+    </p>  
+    <script type="text/javascript">
+    var txt='{"employee":['+
+    '{"firstname":"he","lastname":"jq"},'+'{"firstname":"guo","lastname":"peng"}]}';
+    //var obj=eval("("+txt+")");
+    var obj=JSON.parse(txt);
+    document.getElementById("fname").innerHTML=obj.employee[1].firstname
+    document.getElementById("lname").innerHTML=obj.employee[1].lastname
+    </script> 
+    
+  </body>
+</html>

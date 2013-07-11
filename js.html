@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>he's first js</title>
+  </head>
+  <body>
+    <h2>Sample</h2>
+    <p id="f">ffffff</p>
+    <p id="h">hhhhhh</p>
+    <p> <button type="button" id="mybut">click</button></p>
+    <script>
+       
+      var string="change successful"
+      var arr=new Array("1","2","3");
+      function usearr()
+      {
+        var txt="";
+        for (x in arr)
+        {
+          txt=txt+x;
+        }
+        document.getElementById("f").innerHTML=txt;
+      }
+      var person={name: "hejieqiong" ,age: 25}
+      function myfunction()
+      {
+        document.getElementById("f").innerHTML=person.name;
+        document.getElementById("h").innerHTML=person["age"];
+      }
+      function changemytext(id)
+      {id.innerHTML="3Q"}
+      document.getElementById("mybut").onclick=function(){usearr()}
+      function changeinput()
+      {
+       var x=document.getElementById("fframe");
+       x.value=x.value.toUpperCase(); 
+      }
+    </script>
+
+    <p><button onclick="changemytext(f)">welcome</button></p>
+    <span>input something</span><input type="text" id="fframe"  onchange="changeinput()">
+  </body>
+</html>
